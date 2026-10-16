@@ -1,0 +1,20 @@
+AIRCO OPTİMİZASYON SONUÇLARI
+--------------------------------
+Çözüm durumu: Optimal
+
+Ay 1:
+  New York üretimi: 100.00
+  Los Angeles üretimi: 0.00
+  Ay sonu stoku: 0.00
+
+Ay 2:
+  New York üretimi: 210.00
+  Los Angeles üretimi: 200.00
+  Ay sonu stoku: 10.00
+
+Ay 3:
+  New York üretimi: 210.00
+  Los Angeles üretimi: 280.00
+  Ay sonu stoku: 0.00
+
+Minimum toplam maliyet: $375000.00
