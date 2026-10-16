@@ -1,0 +1,23 @@
+       WINSTON TABLO 83: ÇOK DÖNEMLİ ÜRETİM VE STOK OPTİMİZASYONU
+=================================================================
+[*] Kullanılan Çözücü (Solver) : PULP_CBC_CMD
+[*] Çözüm Durumu (Status)     : Optimal
+-----------------------------------------------------------------
+AYLIK OPTİMAL ÜRETİM VE SATIŞ PLANI:
+ > Ay 1 Üretim Miktarı      : 35.0 birim
+ > Ay 1 İkincil Satış       : 15.0 birim
+ > Ay 1 Sonu Kalan Stok (I) : 0.0 birim
+ > Ay 2 Üretim Miktarı      : 35.0 birim
+ > Ay 2 İkincil Satış       : 15.0 birim
+ > Ay 2 Sonu Kalan Stok (I) : 5.0 birim
+ > Ay 3 Üretim Miktarı      : 35.0 birim
+ > Ay 3 İkincil Satış       : 15.0 birim
+ > Ay 3 Sonu Kalan Stok (I) : 0.0 birim
+
+ > Elde Edilen Maksimum Net Kâr : 250.00 $
+-----------------------------------------------------------------
+YÖNETSEL ÇIKARIMLAR VE YORUMLAR:
+1. Model, üretim maliyetinin düşük olduğu ve satış fiyatının avantajlı olduğu aylarda üretimi artırmıştır.
+2. Birincil müşteri talepleri eksiksiz karşılanırken, kalan kapasite ikincil müşterilere karlı şekilde yönlendirilmiştir.
+3. Envanter (holding) maliyetleri ile üretim maliyetleri dengelenerek en yüksek net kâr elde edilmiştir.
+=================================================================
