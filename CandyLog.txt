@@ -1,0 +1,77 @@
+Python 3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+================ RESTART: C:\Users\Zeynep\Desktop\CandyModel.py ================
+CBC devel -- COIN-OR Branch and Cut
+  args: C:\Users\Zeynep\AppData\Local\Temp\d70550cff38c4c4980468de48e5972d2-pulp.mps -timeMode elapsed -solve -printingOptions all -solution C:\Users\Zeynep\AppData\Local\Temp\d70550cff38c4c4980468de48e5972d2-pulp.sol
+  default strategy 1
+
+> Problem loading
+
+  Problem: MODEL
+  |Rows| = 6   |Cols| = 6   |NZ| = 15
+  Variables: 6 continuous
+
+  Coefficient ranges:
+    Matrix  in [0.1,    1]   ratio =   10
+    Cost    in [0.2, 0.25]   ratio = 1.25
+    Bounds  in [  -,    -]   ratio =    -
+    RHS     in [ 20,  100]   ratio =    5
+
++ Problem loaded - 6 rows, 6 cols, 15 NZ
+  Bound tightening: 6 bounds tightened (0 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.00s)
+  Coefficient strengthening: no changes (0.00s)
+
+> LP solve
+
+  -------- -------- --------------- ------------ ------------ --------
+  Phase        Iter       Objective   Primal inf     Dual inf     Time
+  -------- -------- --------------- ------------ ------------ --------
+  Primal          0    0.000000e+00   0.0000e+00   1.3500e+00    0.001
+  Primal         10   -3.250000e+01   0.0000e+00   0.0000e+00    0.001
+  -------- -------- --------------- ------------ ------------ --------
+
++ Optimal - Obj: -32.5   Iters: 10   Time: 0.001s
+Total time (Wallclock seconds): 0.0229778   (CPU seconds):             0.027
+
+==============================
+CANDY PROBLEM - ÇIKTI ANALİZİ
+==============================
+
+--- OPTİMAL ÇÖZÜM ---
+Maksimum gelir: 32.5000000000013 $
+
+--- DEĞİŞKEN DEĞERLERİ ---
+x11 = 59.9999999999822
+x12 = 9.9999999999968
+x13 = 30.0
+x21 = 40.0000000000178
+x22 = 10.0000000000042
+x23 = 0.0
+
+--- ÜRÜN BAZLI ANALİZ ---
+Slugger üretimi: 99.999999999979 oz
+Easy Out üretimi: 50.000000000022 oz
+Toplam üretim: 150.000000000001 oz
+Slugger geliri: 19.9999999999958 $
+Easy Out geliri: 12.5000000000055 $
+
+--- KAYNAK KULLANIMI ---
+Şeker kullanımı: 100.0 / 100 oz
+Fındık kullanımı: 20.000000000001002 / 20 oz
+Çikolata kullanımı: 30.0 / 30 oz
+
+--- KAYNAK KULLANIM ORANLARI ---
+Şeker kullanım oranı: 100.0 %
+Fındık kullanım oranı: 100.00000000000502 %
+Çikolata kullanım oranı: 100.0 %
+
+--- ÜRETİM PAYLARI ---
+Slugger üretim payı: 66.66666666665222 %
+Easy Out üretim payı: 33.333333333347774 %
+
+--- ÇIKTI YORUMU ---
+Optimizasyon sonucunda kaynakların tamamının kullanıldığı görülmektedir.
+Slugger ve Easy Out için optimal üretim miktarları belirlenmiştir.
+Toplam gelir maksimum seviyeye çıkarılmıştır.

@@ -1,0 +1,92 @@
+Python 3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+
+=============== RESTART: C:\Users\Zeynep\Desktop\TelevcoModel.py ===============
+CBC devel -- COIN-OR Branch and Cut
+  args: C:\Users\Zeynep\AppData\Local\Temp\22f528295b17413f90ccd26e83719dcc-pulp.mps -timeMode elapsed -solve -printingOptions all -solution C:\Users\Zeynep\AppData\Local\Temp\22f528295b17413f90ccd26e83719dcc-pulp.sol
+  default strategy 1
+
+> Problem loading
+
+  Problem: MODEL
+  |Rows| = 6   |Cols| = 9   |NZ| = 18
+  Variables: 9 continuous
+
+  Coefficient ranges:
+    Matrix  in [ 1,   1]   ratio =      1
+    Cost    in [60,  85]   ratio = 1.4167
+    Bounds  in [ -,   -]   ratio =      -
+    RHS     in [50, 100]   ratio =      2
+
++ Problem loaded - 6 rows, 9 cols, 18 NZ
+  Bound tightening: 9 bounds tightened (0 fixed) in 0.000 s.
+  Clique strengthening: no changes (0.00s)
+  Coefficient strengthening: no changes (0.00s)
+
+> LP solve
+
+  -------- -------- --------------- ------------ ------------ --------
+  Phase        Iter       Objective   Primal inf     Dual inf     Time
+  -------- -------- --------------- ------------ ------------ --------
+  Primal          0    0.000000e+00   0.0000e+00   6.5500e+02    0.000
+  Primal          7   -1.518000e+04   0.0000e+00   0.0000e+00    0.001
+  -------- -------- --------------- ------------ ------------ --------
+
++ Optimal - Obj: -15180   Iters: 7   Time: 0.001s
+Total time (Wallclock seconds): 0.00372505   (CPU seconds):             0.004
+
+====================================
+     TELEVCO OPTİMİZASYON SONUCU
+====================================
+Çözüm durumu: OPTIMAL
+Maksimum kâr: 15180.000000000146 $
+
+--- SEVKİYAT PLANI ---
+Fabrika 1 -> Müşteri 1: 1.00186525742174e-12 tüp
+Fabrika 1 -> Müşteri 2: 0.0 tüp
+Fabrika 1 -> Müşteri 3: 50.0 tüp
+Fabrika 2 -> Müşteri 1: 29.999999999999 tüp
+Fabrika 2 -> Müşteri 2: 70.000000000001 tüp
+Fabrika 2 -> Müşteri 3: 0.0 tüp
+Fabrika 3 -> Müşteri 1: 50.0 tüp
+Fabrika 3 -> Müşteri 2: 1.00186525742174e-12 tüp
+Fabrika 3 -> Müşteri 3: 0.0 tüp
+
+--- FABRİKA ANALİZİ ---
+Fabrika 1 üretimi: 50.000000000001 / 50 tüp
+Fabrika 2 üretimi: 100.0 / 100 tüp
+Fabrika 3 üretimi: 50.000000000001 / 50 tüp
+Fabrika 1 kapasite kullanımı: 100.000000000002 %
+Fabrika 2 kapasite kullanımı: 100.0 %
+Fabrika 3 kapasite kullanımı: 100.000000000002 %
+
+--- MÜŞTERİ ANALİZİ ---
+Müşteri 1: 80.0 / 80 tüp
+Müşteri 2: 70.00000000000199 / 90 tüp
+Müşteri 3: 50.0 / 100 tüp
+
+--- KARŞILANMAYAN TALEP ---
+Müşteri 1: 0.0 tüp
+Müşteri 2: 19.99999999999801 tüp
+Müşteri 3: 50.0 tüp
+
+--- GENEL ANALİZ ---
+Toplam üretim: 200.000000000002 tüp
+Toplam talep: 270 tüp
+Toplam karşılanmayan talep: 69.99999999999801 tüp
+Toplam fabrika kapasitesi: 200 tüp
+Toplam kapasite kullanım oranı: 100.000000000001 %
+
+====================================
+            ÇIKARIMLAR
+====================================
+1. Model optimal çözüme ulaşmıştır.
+2. Maksimum kâr: 15180.000000000146 $
+3. Toplam üretim: 200.000000000002 tüp
+4. Toplam karşılanmayan talep: 69.99999999999801 tüp
+5. Fabrika 1 kapasite kullanımı: 100.000000000002 %
+6. Fabrika 2 kapasite kullanımı: 100.0 %
+7. Fabrika 3 kapasite kullanımı: 100.000000000002 %
+8. Toplam kapasite kullanım oranı: 100.000000000001 %
+
+Analiz tamamlandı.

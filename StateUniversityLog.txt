@@ -1,0 +1,41 @@
+Python 3.14.8 (tags/v3.14.8:8e6e75d, Sep 30 2026, 18:19:33) [MSC v.1944 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> 
+= RESTART: C:/Users/Zeynep/AppData/Local/Programs/Python/Python314/StateUniversity.py
+
+====================================
+ STATE UNIVERSITY COMPUTERS
+====================================
+Çözüm durumu: OPTIMAL
+Minimum toplam maliyet: 355000.0 $
+
+--- TEDARİK PLANI ---
+Tedarikçi 1 -> 0.0 bilgisayar
+Tedarikçi 2 -> 700.0 bilgisayar
+Tedarikçi 3 -> 400.0 bilgisayar
+
+--- TEDARİKÇİ KULLANIM DURUMU ---
+Tedarikçi 1: 0.0
+Tedarikçi 2: 1.0
+Tedarikçi 3: 1.0
+
+--- GENEL ANALİZ ---
+Toplam bilgisayar: 1100.0
+Değişken maliyet: 345000.0 $
+Sabit teslimat maliyeti: 10000.0 $
+
+--- TEDARİKÇİ BAZLI MALİYET ---
+Tedarikçi 1 toplam maliyeti: 0.0 $
+Tedarikçi 2 toplam maliyeti: 249000.0 $
+Tedarikçi 3 toplam maliyeti: 106000.0 $
+
+====================================
+              SONUÇ
+====================================
+Minimum toplam maliyet: 355000.0 $
+Toplam satın alınan bilgisayar: 1100.0
+Tedarikçi 1: 0.0
+Tedarikçi 2: 700.0
+Tedarikçi 3: 400.0
+
+Analiz tamamlandı.
