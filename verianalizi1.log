@@ -1,0 +1,46 @@
+ WINSTON TABLO 3: U.S. LABS SAYISAL VERİ ANALİZİ (PANDAS & NUMPY)
+======================================================================
+
+--- 1. TABLO 3 ORİJİNAL VERİ SETİ ---
+   Tedarikci_ID  Birim_Maliyet_USD  Yuzde_Buyuk  Yuzde_Orta  Yuzde_Kucuk  Maks_Kapasite_Adet
+0             1                  5           40          40           20                 700
+1             2                  4           30          35           35                 700
+2             3                  3           20          20           60                 700
+
+----------------------------------------------------------------------
+--- 2. TEDARİKÇİ VERİLERİNİN İSTATİSTİKSEL ÖZETİ (Describe) ---
+       Birim_Maliyet_USD  Yuzde_Buyuk  Yuzde_Orta  Yuzde_Kucuk
+count                3.0          3.0    3.000000     3.000000
+mean                 4.0         30.0   31.666667    38.333333
+std                  1.0         10.0   10.408330    20.207259
+min                  3.0         20.0   20.000000    20.000000
+25%                  3.5         25.0   27.500000    27.500000
+50%                  4.0         30.0   35.000000    35.000000
+75%                  4.5         35.0   37.500000    47.500000
+max                  5.0         40.0   40.000000    60.000000
+
+----------------------------------------------------------------------
+--- 3. VEKTÖREL HESAPLAMALAR VE POTANSİYEL KAPASİTE ANALİZİ ---
+   Tedarikci_ID  Birim_Maliyet_USD  Maks_Buyuk_Adet  Maks_Orta_Adet  Maks_Kucuk_Adet  Maks_Toplam_Maliyet_USD
+0             1                  5            280.0           280.0            140.0                     3500
+1             2                  4            210.0           245.0            245.0                     2800
+2             3                  3            140.0           140.0            420.0                     2100
+
+----------------------------------------------------------------------
+--- 4. KOŞULLU FİLTRELEME VE KARŞILAŞTIRMA ---
+En düşük birim maliyetli tedarikçi:
+   Tedarikci_ID  Birim_Maliyet_USD  Yuzde_Buyuk  Yuzde_Orta  Yuzde_Kucuk
+2             3                  3           20          20           60
+
+Büyük boy kapakçık oranı %30 ve üzerinde olan tedarikçiler:
+   Tedarikci_ID  Birim_Maliyet_USD  Yuzde_Buyuk
+0             1                  5           40
+1             2                  4           30
+
+======================================================================
+YÖNETSEL ÇIKARIMLAR VE VERİ ANALİZİ YORUMLARI:
+1. Tedarikçi 3 en ucuz birim fiyata ($3) sahiptir ancak %60 oranında küçük kapakçık sağlamaktadır.
+2. Büyük kapakçık ihtiyacı (min 500 adet) en yüksek olan kısıt olduğu için,
+   %40 büyük kapakçık sunan Tedarikçi 1 ($5) kilit rol oynamaktadır.
+3. Bu veri analizi çalışması, optimizasyon modelinin alt yapısını ve kısıt dengelerini kanıtlamaktadır.
+======================================================================

@@ -1,0 +1,44 @@
+ WINSTON TABLO 83: ÇOK DÖNEMLİ ÜRETİM VE ENVANTER VERİ ANALİZİ
+======================================================================
+
+--- 1. TABLO 83 ORİJİNAL VERİ SETİ ---
+   Ay  Uretim_Maliyeti  Birincil_Talep  Ikincil_Talep_Limiti  Satis_Fiyati  Maks_Uretim_Kapasitesi  Stok_Maliyeti
+0   1               13              20                    15            15                      35              1
+1   2               12              15                    20            14                      35              1
+2   3               13              25                    15            16                      35              1
+
+----------------------------------------------------------------------
+--- 2. İSTATİSTİKSEL ÖZETLER (Describe & NumPy) ---
+       Uretim_Maliyeti  Birincil_Talep  Ikincil_Talep_Limiti  Satis_Fiyati
+count         3.000000             3.0              3.000000           3.0
+mean         12.666667            20.0             16.666667          15.0
+std           0.577350             5.0              2.886751           1.0
+min          12.000000            15.0             15.000000          14.0
+25%          12.500000            17.5             15.000000          14.5
+50%          13.000000            20.0             15.000000          15.0
+75%          13.000000            22.5             17.500000          15.5
+max          13.000000            25.0             20.000000          16.0
+
+[NumPy] Ortalama Üretim Maliyeti : 12.67 $
+[NumPy] Ortalama Satış Fiyatı     : 15.00 $
+
+----------------------------------------------------------------------
+--- 3. VEKTÖREL HESAPLAMALAR VE DÖNEMSEL KÂR MARJLARI ---
+   Ay  Uretim_Maliyeti  Satis_Fiyati  Birim_Kar_Marji  Birincil_Net_Kar
+0   1               13            15                2                40
+1   2               12            14                2                30
+2   3               13            16                3                75
+
+----------------------------------------------------------------------
+--- 4. KOŞULLU FİLTRELEME VE ANALİZ ---
+Birim kâr marjının en yüksek olduğu dönemler:
+   Ay  Birim_Kar_Marji  Uretim_Maliyeti  Satis_Fiyati
+2   3                3               13            16
+
+======================================================================
+YÖNETSEL ÇIKARIMLAR VE VERİ ANALİZİ YORUMLARI:
+1. Ay 3, birim başına 3 $ kâr marjı (16 $ satış, 13 $ maliyet) ile en yüksek kârlılığa sahiptir.
+2. Ay 2, 12 $ birim üretim maliyeti ile en düşük maliyetli üretim dönemidir.
+3. Bu veri analizi çalışması dönemsel maliyet ve gelir yapısını betimsel olarak özetler;
+   optimum envanter ve üretim planı ise kısıtlar altında kurulan optimizasyon modeliyle belirlenecektir.
+======================================================================

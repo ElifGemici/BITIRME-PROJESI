@@ -1,0 +1,45 @@
+ WINSTON TABLO 82: NAKLİYE VE KÂR SAYISAL VERİ ANALİZİ
+======================================================================
+
+--- 1. TABLO 82 ORİJİNAL KÂR VE KAPASİTE VERİ SETİ ---
+   Fabrika  Uretim_Kapasitesi  Musteri_1_Kar  Musteri_2_Kar  Musteri_3_Kar  Musteri_4_Kar
+0  Plant 1               3000             65             63             62             64
+1  Plant 2               5000             68             67             65             62
+2  Plant 3               5000             63             60             59             60
+
+----------------------------------------------------------------------
+--- 2. SAYISAL İSTATİSTİKSEL ÖZETLER (Describe & NumPy) ---
+       Musteri_1_Kar  Musteri_2_Kar  Musteri_3_Kar  Musteri_4_Kar
+count       3.000000       3.000000            3.0            3.0
+mean       65.333333      63.333333           62.0           62.0
+std         2.516611       3.511885            3.0            2.0
+min        63.000000      60.000000           59.0           60.0
+25%        64.000000      61.500000           60.5           61.0
+50%        65.000000      63.000000           62.0           62.0
+75%        66.500000      65.000000           63.5           63.0
+max        68.000000      67.000000           65.0           64.0
+
+[NumPy Hesabı] Tüm Rotalar Geneli Ortalama Birim Kâr: 63.17 USD
+
+----------------------------------------------------------------------
+--- 3. VEKTÖREL HESAPLAMALAR VE ROTA ORTALAMALARI ---
+   Fabrika  Uretim_Kapasitesi  Ortalama_Birim_Kar      Fabrika_Kategori
+0  Plant 1               3000                63.5    Orta Kârlı Fabrika
+1  Plant 2               5000                65.5  Yüksek Kârlı Fabrika
+2  Plant 3               5000                60.5   Düşük Kârlı Fabrika
+
+----------------------------------------------------------------------
+--- 4. KOŞULLU FİLTRELEME VE BETİMSEL ANALİZ ---
+Birim kârın 65 USD ve üzerinde olduğu rota matrisi (True/False):
+   Musteri_1_Kar  Musteri_2_Kar  Musteri_3_Kar  Musteri_4_Kar
+0           True          False          False          False
+1           True           True           True          False
+2          False          False          False          False
+
+======================================================================
+YÖNETSEL ÇIKARIMLAR VE VERİ ANALİZİ YORUMLARI:
+1. Plant 2, ortalama 65.50 USD birim kâr ile diğer fabrikalara kıyasla daha avantajlı bir yapı sunmaktadır.
+2. Müşteri 1 ve Müşteri 2 rotalarında birim kârlar genel olarak daha yüksek seyretmektedir.
+3. Bu veri analizi çalışması dönemsel birim kâr dağılımını betimsel olarak özetler;
+   kesin ve optimum sevkiyat planı ise kapasite ve talep kısıtları altında kurulan optimizasyon modeliyle belirlenecektir.
+======================================================================

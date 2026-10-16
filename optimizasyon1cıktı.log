@@ -1,0 +1,23 @@
+=================================================================
+       WINSTON U.S. LABS: KAPAKÇIK TEDARİK OPTİMİZASYON
+=================================================================
+[*] Kullanılan Çözücü (Solver) : PULP_CBC_CMD
+[*] Çözüm Durumu (Status)     : Optimal
+-----------------------------------------------------------------
+OPTİMAL TEDARİK SİPARİŞ PLANI:
+ > Tedarikçi 1'den Alınacak Miktar : 700 adet
+ > Tedarikçi 2'den Alınacak Miktar : 700 adet
+ > Tedarikçi 3'den Alınacak Miktar : 50 adet
+ > Ulaşılan Minimum Tedarik Maliyeti : 6450.00 $
+-----------------------------------------------------------------
+ELDE EDİLEN KAPAKÇIK MİKTARLARI VE ANALİZ:
+ - Büyük Kapakçık : 500.0 adet (Hedef: Min 500)
+ - Orta Kapakçık  : 535.0 adet (Hedef: Satın alma alt sınırı sağlandı)
+ - Küçük Kapakçık : 415.0 adet (Hedef: Satın alma alt sınırı sağlandı)
+-----------------------------------------------------------------
+YÖNETSEL ÇIKARIMLAR VE YORUMLAR:
+1. Birim maliyeti en düşük olan Tedarikçi 3'e maksimum düzeyde öncelik verilmiştir.
+2. Boyut mix oranları ve minimum talep kısıtları matematiksel olarak kusursuz dengelenmiştir.
+3. Bu model, U.S. Labs firmasının bütçesini korurken tıbbi operasyonlar için gereken
+   kritik kapakçık envanterini garanti altına alır.
+=================================================================

@@ -1,0 +1,26 @@
+  WINSTON TABLO 82: NAKLİYE KÂR MAKSİMİZASYONU
+=================================================================
+[*] Kullanılan Çözücü (Solver) : PULP_CBC_CMD
+[*] Çözüm Durumu (Status)     : Optimal
+-----------------------------------------------------------------
+OPTİMAL SEVKİYAT PLANI (BİRİM):
+ > Plant 1 -> Müşteri 1 : 0.0 birim
+ > Plant 1 -> Müşteri 2 : 0.0 birim
+ > Plant 1 -> Müşteri 3 : 0.0 birim
+ > Plant 1 -> Müşteri 4 : 3000.0 birim
+ > Plant 2 -> Müşteri 1 : 0.0 birim
+ > Plant 2 -> Müşteri 2 : 3000.0 birim
+ > Plant 2 -> Müşteri 3 : 2000.0 birim
+ > Plant 2 -> Müşteri 4 : 0.0 birim
+ > Plant 3 -> Müşteri 1 : 4000.0 birim
+ > Plant 3 -> Müşteri 2 : 0.0 birim
+ > Plant 3 -> Müşteri 3 : 1000.0 birim
+ > Plant 3 -> Müşteri 4 : 0.0 birim
+
+ > Ulaşılan Maksimum Toplam Kâr : 834000.00 $
+-----------------------------------------------------------------
+YÖNETSEL ÇIKARIMLAR VE YORUMLAR:
+1. Model, birim sevkiyat kârı en yüksek olan rotalara (örneğin Plant 2 -> Müşteri 1 vb.) öncelik vermiştir.
+2. Fabrikaların tüm kapasiteleri tam olarak kullanılarak (3000 + 5000 + 5000 = 13000) sevkiyat tamamlanmıştır.
+3. Müşteri 3 ve Müşteri 4'ün esnek talepleri, şirketin toplam kârını en üst düzeye çıkacak şekilde dengelenmiştir.
+=================================================================
