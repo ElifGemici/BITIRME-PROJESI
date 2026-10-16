@@ -20,7 +20,7 @@ kimyasal2_ilac2 = pulp.LpVariable("K2_Ilac2", lowBound=0)
 ilac1 = kimyasal1_ilac1 + kimyasal2_ilac1
 ilac2 = kimyasal1_ilac2 + kimyasal2_ilac2
 
-# 4. Amaç fonksiyonu satış gelirini maksimize ediyoruz
+
 model += 6 * ilac1 + 4 * ilac2, "Toplam_Satis_Geliri"
 
 
